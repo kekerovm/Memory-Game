@@ -28,6 +28,65 @@ for (let color of colors) {
   cardB.setAttribute('data-color', color);
 }
 
+const start8tn = document.getElementById('start8tn')
+
+function initialize() {
+  start8tn.style.display ='none'
+  // moveCount = 3;
+}
+
+// ctx.fillText('Moves left : ', + moveCount, 150, 50):
+
+// moveCount--;
+
+// flipCard(card) {
+//   if(this.canFlipCard(card)) {
+//     this.totalClicks++;
+//     this.ticker.innerText = this.totalClicks;
+//   }
+// }
+
+// startGame() {
+//   this.totalClicks = 0;
+//   this.timeRemaining = this.totalTime;
+//   this.cardToCheck = null;
+//   this.matchedCards = [];
+//   this.busy = true;
+//   setTimeout(() => {
+//       this.audioController.startMusic();
+//       this.shuffleCards(this.cardsArray);
+//       this.countdown = this.startCountdown();
+//       this.busy = false;
+//   }, 500)
+//   this.hideCards();
+//   this.timer.innerText = this.timeRemaining;
+//   this.ticker.innerText = this.totalClicks;
+// }
+// startCountdown() {
+//   return setInterval(() => {
+//       this.timeRemaining--;
+//       this.timer.innerText = this.timeRemaining;
+//       if(this.timeRemaining === 0)
+//           this.gameOver();
+//   }, 1000);
+// }
+// gameOver() {
+//   clearInterval(this.countdown);
+//   this.audioController.gameOver();
+//   document.getElementById('game-over-text').classList.add('visible');
+// }
+// victory() {
+//   clearInterval(this.countdown);
+//   this.audioController.victory();
+//   document.getElementById('victory-text').classList.add('visible');
+// }
+// hideCards() {
+//   this.cardsArray.forEach(card => {
+//       card.classList.remove('visible');
+//       card.classList.remove('matched');
+//   });
+// }
+
 function onCardClicked(e) {
   const target = e.currentTarget;
 
